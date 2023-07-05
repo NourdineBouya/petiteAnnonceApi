@@ -30,6 +30,7 @@ model User {
     city        String
     salaray     String
     image       String?
-    userId  Int
+    userId       Int
     user         User      @relation(fields: [userId], references:[id])
   }
+ 
